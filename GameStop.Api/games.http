@@ -1,0 +1,29 @@
+GET http://localhost:5226/games
+
+###
+GET http://localhost:5226/games/1
+
+###  
+POST http://localhost:5226/games 
+Content-Type: application/json
+
+{
+    "title": "Avatar The Legend of Ang",
+    "genre": "Adventure",
+    "price": 679.99,
+    "releaseDate": "2017-03-03"
+}
+
+###
+PUT http://localhost:5226/games/2
+Content-Type: application/json
+
+{
+    "title": "Red Dead Redemption 3: The Legend Of The West",
+    "genre": "Action-Adventure",
+    "price": 69.99,
+    "releaseDate": "2019-10-26"
+}   
+
+###
+DELETE http://localhost:5226/games/5
