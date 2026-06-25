@@ -1,6 +1,7 @@
 namespace GameStop.Api.Endpoints;
 
 using GameStop.api.Dtos;
+using GameStop.Api.Data;
 using GameStop.Api.Dtos;
 
 public static class GameEndpoints
@@ -49,7 +50,7 @@ public static class GameEndpoints
             .WithName(GetGameEndpoint);
 
         // POST ENDPOINT //
-        group.MapPost("/", (CreateGameDto newGame) =>
+        group.MapPost("/", (CreateGameDto newGame, GameStopContext dbContext) =>
         {
             GameDto game = new GameDto
             {
