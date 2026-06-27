@@ -3,6 +3,7 @@ namespace GameStop.Api.Endpoints;
 using GameStop.api.Dtos;
 using GameStop.Api.Data;
 using GameStop.Api.Dtos;
+using GameStop.Api.Models;
 
 public static class GameEndpoints
 {
@@ -52,17 +53,25 @@ public static class GameEndpoints
         // POST ENDPOINT //
         group.MapPost("/", (CreateGameDto newGame, GameStopContext dbContext) =>
         {
-            GameDto game = new GameDto
+            var game = new Game
             {
-                Id = games.Count + 1,
                 Title = newGame.Title,
-                Genre = newGame.Genre,
+                GenreId = 1,
                 Price = newGame.Price,
                 ReleaseDate = newGame.ReleaseDate
             };
-            games.Add(game);
+            dbContext.Games.Add(game);
+            dbContext.SaveChanges();
 
-            return Results.CreatedAtRoute(GetGameEndpoint, new { id = game.Id }, game);
+            GameDetailsDto gameDto = new(
+                game.Id,
+                game.Title,
+                game.GenreId.ToString(),
+                game.Price,
+                game.ReleaseDate
+            );
+
+            return Results.CreatedAtRoute(GetGameEndpoint, new { id = gameDto.Id }, gameDto);
         });
 
 

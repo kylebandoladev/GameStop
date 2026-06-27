@@ -10,7 +10,7 @@ Content-Type: application/json
 {
     "title": "Avatar The Legend of Ang",
     "genre": "Adventure",
-    "price": 679.99,
+    "price": 79.99,
     "releaseDate": "2017-03-03"
 }
 

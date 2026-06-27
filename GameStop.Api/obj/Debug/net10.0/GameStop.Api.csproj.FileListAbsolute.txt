@@ -143,3 +143,4 @@ C:\Users\Kyle\Desktop\ASP.NET Project\GameStop.Api\bin\Debug\net10.0\runtimes\wi
 C:\Users\Kyle\Desktop\ASP.NET Project\GameStop.Api\bin\Debug\net10.0\runtimes\win-x86\native\e_sqlite3.dll
 C:\Users\Kyle\Desktop\ASP.NET Project\GameStop.Api\obj\Debug\net10.0\GameStop.Api.csproj.AssemblyReference.cache
 C:\Users\Kyle\Desktop\ASP.NET Project\GameStop.Api\obj\Debug\net10.0\GameStop.51FD6EC8.Up2Date
+C:\Users\Kyle\Desktop\ASP.NET Project\GameStop.Api\obj\Debug\net10.0\GameStop.Api.sourcelink.json
