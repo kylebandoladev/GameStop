@@ -1,29 +1,29 @@
 GET http://localhost:5226/games
 
 ###
-GET http://localhost:5226/games/1
+GET http://localhost:5226/games/4
 
 ###  
 POST http://localhost:5226/games 
 Content-Type: application/json
 
 {
-    "title": "Avatar The Legend of Ang",
-    "genre": "Adventure",
-    "price": 79.99,
-    "releaseDate": "2017-03-03"
+    "title": "GTA 8",
+    "genre": "Action-Adventure",
+    "price": 99.99,
+    "releaseDate": "2026-06-28"
 }
 
 ###
-PUT http://localhost:5226/games/2
+PUT http://localhost:5226/games/7
 Content-Type: application/json
 
 {
-    "title": "Red Dead Redemption 3: The Legend Of The West",
+    "title": "GTA 10",
     "genre": "Action-Adventure",
-    "price": 69.99,
-    "releaseDate": "2019-10-26"
+    "price": 99.99,
+    "releaseDate": "2026-06-28"
 }   
 
 ###
-DELETE http://localhost:5226/games/5
+DELETE http://localhost:5226/games/3
