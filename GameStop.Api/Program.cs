@@ -8,7 +8,8 @@ builder.AddGameStopDb();
 var app = builder.Build();
 
 
-app.MapGameEndpoints(); 
+app.MapGameEndpoints();
+app.MapGenresEndpoints(); 
 
 app.MigrateDb();
 

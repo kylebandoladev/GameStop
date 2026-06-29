@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GameStop.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a375ea2282da944868d9ec8b523a370fc9544bc6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1edc89e062857dafaff9ee6ae825fd6c0c4aa699")]
 [assembly: System.Reflection.AssemblyProductAttribute("GameStop.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GameStop.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
